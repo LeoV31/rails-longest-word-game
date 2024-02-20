@@ -1,0 +1,18 @@
+<div class="container">
+  <p>Grand Total Score: <%= @grand_total_score %></p>
+  <h1>New game</h1>
+  <div class="letter-boxes">
+    <% @letters.each do |letter| %>
+      <div class="letter-box"><%= letter %></div>
+    <% end %>
+  </div>
+  <div class="questions">
+    <p>What is the longest word you can make ?<p>
+    <form action="/score" method="get" data-turbo="false">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <input type="text" name="question">
+      <%= hidden_field_tag :letters, @letters %>
+      <button type="submit">Play</button>
+    </form>
+  </div>
+</div>

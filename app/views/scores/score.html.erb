@@ -1,0 +1,6 @@
+<p>Grand Total Score: <%= @grand_total_score %></p>
+<h1>Results:</h1>
+<p><%= @message %></p>
+<%= hidden_field_tag :grand_total_score, @grand_total_score %>
+
+<%= link_to "Play again", new_path, class: "btn btn-secondary" %>

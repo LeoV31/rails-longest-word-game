@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+/* Style for the container of letter boxes */
+.letter-boxes {
+  display: flex; /* Utiliser flexbox pour aligner les boîtes horizontalement */
+  justify-content: center; /* Centrer horizontalement les boîtes */
+}
+
+/* Style for each letter box */
+.letter-box {
+  width: 40px; /* Largeur de chaque boîte */
+  height: 40px; /* Hauteur de chaque boîte */
+  border: 1px solid #000; /* Bordure noire */
+  margin: 5px; /* Marge autour de chaque boîte */
+  display: flex; /* Utiliser flexbox pour centrer verticalement le contenu */
+  justify-content: center; /* Centrer horizontalement le contenu */
+  align-items: center; /* Centrer verticalement le contenu */
+  background-color: aquamarine;
+}
+
+.container {
+  text-align: center; /* Centrer le contenu horizontalement */
+}
